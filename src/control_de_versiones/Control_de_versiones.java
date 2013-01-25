@@ -15,5 +15,6 @@ public class Control_de_versiones {
      */
     public static void main(String[] args) {
        Vista vista = new Vista();
+       TablaPersonas TP = new TablaPersonas();
     }
 }

@@ -9,14 +9,15 @@ package control_de_versiones;
  * @author Jukniz
  */
 public class persona {
+     private String DNI="NULL";
     private String Nombre="NULL";
     private String Primer_Apellido="NULL";
     private String Segundo_Apellido="NULL";
     private int Edad=0;
     private String Sexo="NULL";
-    private String DNI="NULL";
+   
 
-    public persona(String Nombre, String Primer_Apellido, String Segundo_Apellido, int Edad, String Sexo, String DNI) {
+    public persona(String DNI, String Nombre, String Primer_Apellido, String Segundo_Apellido, int Edad, String Sexo) {
         this.Nombre = Nombre;
         this.Primer_Apellido = Primer_Apellido;
         this.Segundo_Apellido = Segundo_Apellido;

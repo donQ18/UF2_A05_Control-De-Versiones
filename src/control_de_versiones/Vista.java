@@ -33,20 +33,20 @@ public class Vista extends JFrame implements ActionListener {
         this.setVisible(true);
         this.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         contenedor = new JPanel(new GridLayout(2, 6));
-
+         contenedor.add(Int_DNI);
         contenedor.add(Int_Nombre);
         contenedor.add(Int_PrimerApellido);
         contenedor.add(Int_SegundoApellido);
         contenedor.add(Int_Edad);
         contenedor.add(Int_Sexo);
-        contenedor.add(Int_DNI);
-
+       
+   contenedor.add(DNI);
         contenedor.add(Nombre);
         contenedor.add(PrimerApellido);
         contenedor.add(SegundoApellido);
         contenedor.add(Edad);
         contenedor.add(Sexo);
-        contenedor.add(DNI);
+     
 
         add(contenedor, "Center");
         buttonInsert.addActionListener(this);
@@ -60,7 +60,7 @@ public class Vista extends JFrame implements ActionListener {
         boolean ok=false;
         
         try{
-        persona Persona = new persona(Nombre.getText(), PrimerApellido.getText(), SegundoApellido.getText(), Integer.parseInt(Edad.getText()), Sexo.getText(), DNI.getText());
+        persona Persona = new persona(DNI.getText(), Nombre.getText(), PrimerApellido.getText(), SegundoApellido.getText(), Integer.parseInt(Edad.getText()), Sexo.getText());
 
         Controlador controlador = new Controlador();
         ok=controlador.Insertar(Persona);
